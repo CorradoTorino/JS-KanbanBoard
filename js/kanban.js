@@ -37,6 +37,8 @@ const create_item = () => {
   let save_btn = document.createElement('button');
   save_btn.innerHTML = 'Save';
 
+  // add an event listener for the save button
+  save_btn.addEventListener('click', () => {} );
 };
 
 document.querySelectorAll('.drop').forEach(element => {
