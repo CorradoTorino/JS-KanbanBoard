@@ -47,6 +47,10 @@ const create_item = () => {
       item.innerHTML = input.value;
       adding = false;
     }
+    else {
+      // in case of empty input ask for adding a description
+      error.innerHTML = message;
+    }
 
   } );
 };
