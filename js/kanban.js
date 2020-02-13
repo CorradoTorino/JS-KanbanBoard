@@ -33,6 +33,10 @@ const create_item = () => {
   let input = document.createElement('input');
   item.appendChild(input);
 
+  // add the save button element to the document
+  let save_btn = document.createElement('button');
+  save_btn.innerHTML = 'Save';
+
 };
 
 document.querySelectorAll('.drop').forEach(element => {
