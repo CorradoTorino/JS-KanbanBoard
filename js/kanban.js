@@ -62,5 +62,8 @@ document.querySelectorAll('.drop').forEach(element => {
   // define the event listener for dropping element
   element.addEventListener('drop', event => {
     event.preventDefault();
+
+    // save the text data of the element to the id variable
+    let id = event.dataTransfer.getData('text');
   });
 });
