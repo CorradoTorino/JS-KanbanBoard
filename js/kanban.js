@@ -28,6 +28,11 @@ const create_item = () => {
   // define an event listener for drag end
   item.addEventListener('dragend', event =>
     event.dataTransfer.clearData() );
+
+  // add an input child element to item
+  let input = document.createElement('input');
+  item.appendChild(input);
+
 };
 
 document.querySelectorAll('.drop').forEach(element => {
