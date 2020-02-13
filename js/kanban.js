@@ -67,6 +67,9 @@ document.querySelectorAll('.drop').forEach(element => {
     let id = event.dataTransfer.getData('text');
 
     // append the dropped element
-    event.target.appendChild(document.getElementById(id));    ;
+    event.target.appendChild(document.getElementById(id));
   });
+
+  // add event listener for dragover of the element for prevent default
+  element.addEventListener('dragover', event => event.preventDefault() );
 });
