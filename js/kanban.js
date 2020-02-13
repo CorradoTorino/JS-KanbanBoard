@@ -38,8 +38,7 @@ const create_item = () => {
   save_btn.innerHTML = 'Save';
 
   // add an event listener for the save button
-  save_btn.addEventListener('click', () =>
-  {
+  save_btn.addEventListener('click', () =>{
     error.innerHTML = '';
     if(input.value !== '')
     {
@@ -51,7 +50,7 @@ const create_item = () => {
       // in case of empty input ask for adding a description
       error.innerHTML = message;
     }
-  }
+  });
 
   // append the save button to the item
   item.appendChild(save_btn);
