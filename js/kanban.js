@@ -65,5 +65,8 @@ document.querySelectorAll('.drop').forEach(element => {
 
     // save the text data of the element to the id variable
     let id = event.dataTransfer.getData('text');
+
+    // append the dropped element
+    event.target.appendChild(document.getElementById(id));    ;
   });
 });
