@@ -51,8 +51,11 @@ const create_item = () => {
       // in case of empty input ask for adding a description
       error.innerHTML = message;
     }
+  }
 
-  } );
+  // append the save button to the item
+  item.appendChild(save_btn);
+  return item;
 };
 
 document.querySelectorAll('.drop').forEach(element => {
