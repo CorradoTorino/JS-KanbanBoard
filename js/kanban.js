@@ -58,4 +58,9 @@ const create_item = () => {
 };
 
 document.querySelectorAll('.drop').forEach(element => {
+
+  // define the event listener for dropping element
+  element.addEventListener('drop', event => {
+    event.preventDefault();
+  });
 });
