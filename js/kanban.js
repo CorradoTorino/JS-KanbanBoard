@@ -38,7 +38,17 @@ const create_item = () => {
   save_btn.innerHTML = 'Save';
 
   // add an event listener for the save button
-  save_btn.addEventListener('click', () => {} );
+  save_btn.addEventListener('click', () =>
+  {
+    error.innerHTML = '';
+    if(input.value !== '')
+    {
+      order += 1;
+      item.innerHTML = input.value;
+      adding = false;
+    }
+
+  } );
 };
 
 document.querySelectorAll('.drop').forEach(element => {
